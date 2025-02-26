@@ -48,6 +48,7 @@ pico_enable_stdio_usb(WeatherAssistant 1)
 target_link_libraries(WeatherAssistant
         pico_stdlib
         hardware_i2c
+        hardware_pwm
         pico_cyw43_arch_lwip_threadsafe_background
         )
 
