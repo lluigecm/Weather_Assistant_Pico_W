@@ -281,6 +281,7 @@ void extract_data_from_response() {
             size_t length = temp_end - temp_start;
             strncpy(temperature, temp_start, length);
             temperature[length] = '\0';
+            strcat(temperature, "_C");
         }
     }
 
@@ -293,6 +294,7 @@ void extract_data_from_response() {
             size_t length = feels_like_end - feels_like_start;
             strncpy(feels_like, feels_like_start, length);
             feels_like[length] = '\0';
+            strcat(feels_like, "_C");
         }
     }
 }

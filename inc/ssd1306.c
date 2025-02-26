@@ -174,6 +174,8 @@ void ssd1306_draw_char(ssd1306_t *ssd, char c, uint8_t x, uint8_t y)
     index = 65 * 8; // Para o ponto
   } else if(c == '-'){
     index = 66 * 8; // Para o traço
+  }else if(c == '_'){
+    index = 67 * 8; // Para o grau
   }
   
   for (uint8_t i = 0; i < 8; ++i)
