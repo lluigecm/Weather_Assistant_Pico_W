@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(WeatherAssistant WeatherAssistant.c inc/ssd1306.c )
+add_executable(WeatherAssistant WeatherAssistant.c inc/ssd1306.c)
 
 pico_set_program_name(WeatherAssistant "WeatherAssistant")
 pico_set_program_version(WeatherAssistant "0.1")
@@ -57,5 +57,7 @@ target_include_directories(WeatherAssistant PRIVATE
         ${PICO_SDK_PATH}/lib/lwip/src/include
         ${PICO_SDK_PATH}/lib/cyw43-driver/src/include
 )
+
+target_sources(WeatherAssistant PRIVATE ${PICO_SDK_PATH}/lib/lwip/src/apps/http/http_client.c)
 
 pico_add_extra_outputs(WeatherAssistant)

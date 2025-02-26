@@ -42,7 +42,8 @@
     "ip_addr.h": "c",
     "sockets.h": "c",
     "sys.h": "c",
-    "cyw43_arch.h": "c"
+    "cyw43_arch.h": "c",
+    "pbuf.h": "c"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }
