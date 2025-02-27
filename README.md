@@ -8,7 +8,7 @@ Este projeto utiliza a placa **BitDogLab** para explorar conceitos de requisiç�
 ## Funcionalidades 🎮
 Alguns botões das placas possuem algumas funcionalidades:
 
-- **Botão do Joystick**: Faz uma requisição HTTP para a API do OpenWeatherMap. É gratuito, e fornece até 1000 requests/dia.
+- **Botão do Joystick**: Faz uma requisição HTTP para a API do OpenWeatherMap.
 - **Display**: Exibe informações sobre status da conexão, temperatura, sensação térmica, e tempo(chuva, ensolarado, nublado).
 - **Botão A e B**: Alternam entre as telas do **Display**.
 
@@ -16,10 +16,10 @@ Alguns botões das placas possuem algumas funcionalidades:
 
 ## Observações 📌
 
-- **API Key**: Para utilizar o programa, é necessário obter uma chave de API na [OpenWeatherMap](https://openweathermap.org/).
+- **API Key**: Para utilizar o programa, é necessário obter uma chave de API na [OpenWeatherMap](https://openweathermap.org/) e colocá-la no arquivo `inc/assets.h`.
 - **WiFi**: O programa utiliza a conexão WiFi para fazer requisições HTTP.
-- **SSID e Senha**: É necessário configurar o SSID e senha da rede WiFi no arquivo `assets.h'.
-- **CIDADE**: A cidade utilizada para a requisição deve ser configurada no arquivo `assets.h`. Exemplo: "Sao Paulo, br".
+- **SSID e Senha**: É necessário configurar o SSID e senha da rede WiFi no arquivo `inc/assets.h`.
+- **CIDADE**: A cidade utilizada para a requisição deve ser configurada no arquivo `inc/assets.h`. Exemplo: "Sao Paulo, br".
 
 ---
 
@@ -48,7 +48,7 @@ Exemplo de botão de compilação:
 
 - Compilador C (ex: **gcc** ou equivalente) 🖥️.
 - Sistema operacional compatível com programas em C.
-- Conta na OpenWeatherMap para obter a chave de API 🌐.
+- Conta na OpenWeatherMap para obter a chave de API 🌐. É gratuito, e fornece até 1000 requests/dia.
 - Conexão WiFi.
 - Extensão **Raspberry Pi Pico**.
 - Placa **BitDogLab**.
