@@ -274,7 +274,7 @@ static err_t http_connected_callback(void *arg, struct tcp_pcb *tpcb, err_t err)
         display_screens(4);
         tcp_write(tpcb, REQUEST, sizeof(REQUEST) - 1, TCP_WRITE_FLAG_COPY);
         tcp_output(tpcb);
-        tcp_sent(tpcb, http_sent_callback);
+        tcp_sent(tpcb, http_sent_callback); // 
     } else {
         printf("Erro na conexão: %d\n", err);
         tcp_close(tpcb);
